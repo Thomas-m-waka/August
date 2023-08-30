@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:0;
-    background:white;
+    background:linear-gradient(120deg,#9acdf0,#b88cca);
     height:100vh;
     overflow: hidden;
     font-family:sans-serif;
