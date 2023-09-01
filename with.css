@@ -19,35 +19,43 @@ nav ul{
   
     padding:4px;
 }
-.conatiner{
-    width:100%;
+.container{
+    width:100;
+    box-shadow: 4px solid  blue;
 }
 .form-container{
     align-items:center;
-    background-color: blue;
     display:block;
     font-size:30px;
     border-radius: 4px;
+    color:black;
+    
+}
+form{
+    background-color: rgb(229, 235, 229);
+    box-shadow:20px solid red;
+    border:5px;
+    border-radius: 30px;
+    margin:0  auto;
 }
 .form-group{
     width: 100%;
+    border-radius: 200px;
 }
 .form-container label{
     color:black;
     font-size:20px;
     display:flex;
-    margin:5px  ; 
-    font-weight:900px;
-
+    font-weight:bold;
+    margin-bottom: 0;
+    padding: 10px;
 }
 input[type="text"],
 input[type="number"]{
     width:calc(100% - 60px);
-   
     padding:10px;
     border: 1px solid rgb(1, 7, 1);
     border-radius: 4px;
-    margin: 10px;
     font-size:20px;
 }
 #purpose{
@@ -55,7 +63,6 @@ input[type="number"]{
     padding:10px;
     border: 1px solid rgb(1, 7, 1);
     border-radius: 4px;
-    margin: 10px;
     font-size:20px;
 }
 .camera{
@@ -64,7 +71,6 @@ input[type="number"]{
    width:100%;
 }
 .sub{
-    color:yellow;
     font-size:20px;
     display: flex;
     align-items: center;
@@ -73,9 +79,13 @@ input[type="number"]{
     margin-bottom:0;
 }
 input[type="submit"]{
-color:red;
+    background-color: green;
+color:white;
 font-size:26px;
 justify-content: center;
+border-radius: 15px;
+padding:6px;
+cursor: pointer;
 }
 #startCameraButton{
     background-color: black;
@@ -129,6 +139,60 @@ justify-content: center;
     margin-bottom:5px;
 
 }
+#startCameraButton1,#startCameraButton2{
+    background-color: black;
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+    margin-left:20px;
+}
+
+#videoFeed1,#videoFeed2{
+    width: calc(100% - 60px);
+    border-radius: 20px;
+    margin:20px;
+    padding:10px;
+    border: 2px rebeccapurple;
+}
+#captureFrontButton1,
+    #captureFrontButton2{
+    background-color: blue;
+    color:white;
+    border-radius: 2px;
+    padding:10px;
+    font-size:16px;
+    justify-content: center;
+    align-items: center;
+    margin-left:100px;
+    margin-top:0;
+    margin-bottom:5px;
+}
+#canvas1,#canvas2{
+    width: calc(100% - 60px);
+    border-radius: 20px;
+    margin:20px;
+    padding:10px;
+    border: 2px rebeccapurple;
+}
+#frontImage1,
+    #frontImage2{
+    width:calc(100% - 60px);
+    border-radius:10px;
+    margin:10px;
+}
+#deleteFrontButton1,#deleteFrontButton2{
+    background-color: red;
+    color:white;
+    border-radius: 2px;
+    padding:10px;
+    font-size:16px;
+    justify-content: center;
+    align-items: center;
+    margin-left:100px;
+    margin-top:0;
+    margin-bottom:5px;    
+}
+
 @media only screen and (min-width:1000px){
     .form-container{
         width:calc(100% - 800px);
@@ -137,7 +201,17 @@ justify-content: center;
         align-items: center;
         margin:0 auto;
     }
-   
-    
-    
+    #videoFeed1,#videoFeed2{
+        width: 100%;
+        border-radius: 20px;
+        padding:10px;
+        border: 2px rebeccapurple;
+    }
+ 
+    #frontImage1,
+    #frontImage2{
+    width:calc(100% - 60px);
+    border-radius:10px;
+    margin:10px;
+}      
 }

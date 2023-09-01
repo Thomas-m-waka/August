@@ -21,7 +21,7 @@
 </nav>
   <div class="container">
     <form method="post" action="{% url 'withoutvehicle' %}" enctype="multipart/form-data">
-            
+        {% csrf_token %}
         <div class="form-container">
           <div class="form-group">
             <label for="name" >Name</label>
